@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Swagger Editor</title>
+    <link rel="stylesheet" href="swagger-editor.css" />
+  </head>
+  <body>
+    <div id="swagger-editor"></div>
+
+    <!-- ⚠️ Orden correcto: primero el preset -->
+    <script src="swagger-editor-standalone-preset.js"></script>
+    <script src="swagger-editor-bundle.js"></script>
+
+    <script>
+      window.onload = function () {
+        SwaggerEditorBundle({
+          dom_id: "#swagger-editor"
+        });
+      };
+    </script>
+  </body>
+</html>
